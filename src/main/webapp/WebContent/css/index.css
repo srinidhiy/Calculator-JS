@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calculator {
+	width: 30%;
+	margin-top: 40px;
+	border: solid grey;
+	
+}
+
+#output {
+	width: 100%;
+	height: 70px;
+	background: black;
+	color: white;
+	padding: 15px;
+	font-size: 30px;
+	text-align: right;
+}
+
+
+.input {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 1px;
+	background-color: grey	
+}
+
+.input-btn {
+	background-color: white;
+	padding: 15px;
+	text-align: center;
+	font-size: 30px;
+}
+
+/* operations */
+.input-btn:nth-child(1), .input-btn:nth-child(2), .input-btn:nth-child(3), .input-btn:nth-child(4), .input-btn:nth-child(19) {
+	background-color: lightgray;
+	padding: 15px;
+	text-align: center;
+	font-size: 30px;
+		
+}
+ 
+
+.input-btn:last-child {
+	background-color: #ffa089;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	font-size: 30px;
+	
+}
+
+/* .equals {
+	background-color: #ffa089;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	font-size: 30px;
+} */
+
+#grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+
+#grid-container operations {
+	background-color: grey;
+	text-align: center;
+  	padding: 20px 0;
+  	font-size: 30px;
+}
+#grid-container numbers {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+#grid-container equals {
+	background-color: orange;
+	text-align: center;
+	color: white;
+	padding-right: 20px;
+	font-size: 30px;
+}
